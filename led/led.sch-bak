@@ -1,0 +1,110 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 61707BF1
+P 6150 4000
+F 0 "R1" V 6050 3900 50  0000 C CNN
+F 1 "R" V 6050 4000 50  0000 C CNN
+F 2 "" V 6080 4000 50  0001 C CNN
+F 3 "~" H 6150 4000 50  0001 C CNN
+	1    6150 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 4000 6000 4000
+$Comp
+L power:GND #PWR0101
+U 1 1 6170DC2F
+P 5250 4300
+F 0 "#PWR0101" H 5250 4050 50  0001 C CNN
+F 1 "GND" H 5255 4127 50  0000 C CNN
+F 2 "" H 5250 4300 50  0001 C CNN
+F 3 "" H 5250 4300 50  0001 C CNN
+	1    5250 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 6170EA80
+P 6450 3750
+F 0 "#PWR0102" H 6450 3600 50  0001 C CNN
+F 1 "+5V" H 6465 3923 50  0000 C CNN
+F 2 "" H 6450 3750 50  0001 C CNN
+F 3 "" H 6450 3750 50  0001 C CNN
+	1    6450 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4300 5250 4250
+Wire Wire Line
+	6300 4000 6450 4000
+Wire Wire Line
+	6450 4000 6450 3750
+$Comp
+L Device:LED D1
+U 1 1 61705747
+P 5650 4000
+F 0 "D1" H 5643 4217 50  0000 C CNN
+F 1 "LED" H 5643 4126 50  0000 C CNN
+F 2 "" H 5650 4000 50  0001 C CNN
+F 3 "~" H 5650 4000 50  0001 C CNN
+	1    5650 4000
+	1    0    0    -1  
+$EndComp
+Text Label 6350 4000 0    50   ~ 0
+5V
+Text Label 5300 4000 0    50   ~ 0
+GND
+Wire Wire Line
+	5250 4000 5500 4000
+Wire Notes Line
+	5050 3500 6650 3500
+Wire Notes Line
+	6650 3500 6650 4550
+Wire Notes Line
+	6650 4550 5050 4550
+Wire Notes Line
+	5050 3500 5050 4550
+Text Notes 6150 4500 0    50   ~ 0
+LED Circuit\n
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6171CD9C
+P 6450 3750
+F 0 "#FLG0101" H 6450 3825 50  0001 C CNN
+F 1 "PWR_FLAG" V 6450 3877 50  0000 L CNN
+F 2 "" H 6450 3750 50  0001 C CNN
+F 3 "~" H 6450 3750 50  0001 C CNN
+	1    6450 3750
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6450 3750
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6171E536
+P 5250 4250
+F 0 "#FLG0102" H 5250 4325 50  0001 C CNN
+F 1 "PWR_FLAG" V 5250 4378 50  0000 L CNN
+F 2 "" H 5250 4250 50  0001 C CNN
+F 3 "~" H 5250 4250 50  0001 C CNN
+	1    5250 4250
+	0    1    1    0   
+$EndComp
+Connection ~ 5250 4250
+Wire Wire Line
+	5250 4250 5250 4000
+$EndSCHEMATC
