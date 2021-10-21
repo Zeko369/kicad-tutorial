@@ -53,7 +53,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 4000 6450 4000
 Wire Wire Line
-	6450 4000 6450 3750
+	6450 4000 6450 3950
 $Comp
 L Device:LED D1
 U 1 1 61705747
@@ -106,5 +106,28 @@ F 3 "~" H 5250 4250 50  0001 C CNN
 $EndComp
 Connection ~ 5250 4250
 Wire Wire Line
-	5250 4250 5250 4000
+	5250 4250 5250 4150
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 61712377
+P 6950 3950
+F 0 "J?" H 6978 3926 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 6978 3835 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6950 3950 50  0001 C CNN
+F 3 "~" H 6950 3950 50  0001 C CNN
+	1    6950 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3950 6450 3950
+Connection ~ 6450 3950
+Wire Wire Line
+	6450 3950 6450 3750
+Wire Wire Line
+	6750 4050 6750 4150
+Wire Wire Line
+	6750 4150 5250 4150
+Connection ~ 5250 4150
+Wire Wire Line
+	5250 4150 5250 4000
 $EndSCHEMATC
