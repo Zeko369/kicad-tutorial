@@ -527,8 +527,8 @@
     )
   )
 
-  (gr_text "DHT22 - GPIO 17" (at 107.2388 132.2832) (layer F.Cu)
-    (effects (font (size 1 1) (thickness 0.15)))
+  (gr_text "DHT - 17\nled - 4\nbtn - 14 " (at 91.8972 118.7196) (layer F.SilkS)
+    (effects (font (size 0.7 0.7) (thickness 0.15)) (justify left))
   )
   (gr_line (start 90.5002 117.3226) (end 88.265 117.3226) (layer Edge.Cuts) (width 0.05) (tstamp 617277C0))
   (gr_line (start 91.059 129.6162) (end 91.059 117.8814) (layer Edge.Cuts) (width 0.05) (tstamp 617277BF))
