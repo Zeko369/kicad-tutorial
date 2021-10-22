@@ -460,9 +460,9 @@ Wire Wire Line
 Text Label 4750 3450 0    50   ~ 0
 ADDS2
 Text Label 4550 4850 2    50   ~ 0
-ADDS1
-Text Label 4550 4950 2    50   ~ 0
 ADDS2
+Text Label 4550 4950 2    50   ~ 0
+ADDS1
 Wire Wire Line
 	4275 4850 4550 4850
 Wire Wire Line
