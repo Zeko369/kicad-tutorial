@@ -43,7 +43,6 @@
 
   (setup
     (last_trace_width 0.25)
-    (user_trace_width 0.5)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
     (zone_45_only no)
@@ -52,7 +51,6 @@
     (via_drill 0.4)
     (via_min_size 0.4)
     (via_min_drill 0.3)
-    (user_via 1.2 1)
     (uvia_size 0.3)
     (uvia_drill 0.1)
     (uvias_allowed no)
@@ -157,6 +155,7 @@
     (add_net /TX)
     (add_net /X1)
     (add_net /X2)
+    (add_net GND)
     (add_net "Net-(D1-Pad2)")
     (add_net "Net-(R1-Pad2)")
     (add_net "Net-(U1-Pad13)")
@@ -168,16 +167,6 @@
     (add_net "Net-(U3-Pad1)")
     (add_net "Net-(U3-Pad2)")
     (add_net "Net-(U3-Pad7)")
-  )
-
-  (net_class Power ""
-    (clearance 0.3)
-    (trace_width 0.5)
-    (via_dia 1.2)
-    (via_drill 1)
-    (uvia_dia 0.3)
-    (uvia_drill 0.1)
-    (add_net GND)
     (add_net VCC)
   )
 

@@ -442,8 +442,6 @@ Wire Wire Line
 Wire Wire Line
 	5375 3750 5775 3750
 Wire Wire Line
-	6050 3750 6225 3750
-Wire Wire Line
 	5775 3550 5775 3750
 Connection ~ 5775 3750
 Wire Wire Line
@@ -556,19 +554,8 @@ Wire Wire Line
 Text Label 6050 3450 0    50   ~ 0
 ADDS2
 Wire Wire Line
-	4975 3550 4925 3550
-Wire Wire Line
-	4925 3550 4925 3750
-Wire Wire Line
 	4925 3750 5375 3750
 Connection ~ 5375 3750
-Wire Wire Line
-	6275 3550 6225 3550
-Wire Wire Line
-	6225 3550 6225 3750
-Connection ~ 6225 3750
-Wire Wire Line
-	6225 3750 6675 3750
 Wire Wire Line
 	3075 3950 3075 3550
 Connection ~ 3075 3550
@@ -591,4 +578,14 @@ F 3 "~" H 3675 3500 50  0001 C CNN
 	1    3675 3500
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	6050 3750 6675 3750
+Text Label 4750 3550 0    50   ~ 0
+VCC
+Text Label 6050 3550 0    50   ~ 0
+VCC
+Wire Wire Line
+	6050 3550 6275 3550
+Wire Wire Line
+	4750 3550 4975 3550
 $EndSCHEMATC
